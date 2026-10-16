@@ -1,0 +1,374 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Produkt;
+    src: url(font/Produkt-Bold-Web.woff2);
+}
+
+@font-face {
+    font-family: Arvor;
+    src: url(font/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Arvob;
+    src: url(font/Arvo-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: Montserrat;
+
+    display: grid;
+    grid-template-columns: 12vw 76vw 12vw;
+    grid-template-rows: 5vh 10vh 7vh 3vh 46vh auto auto 70vh 18vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.75rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: #0000a4;
+}
+
+
+#selectHeader {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    place-self: flex-end;
+}
+
+#selectHeader img {
+    max-height: 25px;
+}
+
+.zoekbalkheader {
+    background-color: #0000a4;
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    align-items: center;
+
+    grid-template-columns: 12vw 15vw 500px 1fr 12vw;
+}
+
+#zoekbalk {
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+    border: solid white 1px;
+    grid-column: 3;
+}
+
+.zoekbalkheaderrechts {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+
+    color: white;
+    font-size: 0.75rem;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+
+.zoekbalkheaderrechts img {
+    max-height: 30px;
+}
+
+
+#vergrootglasicon {
+    max-height: 5vh;
+
+    justify-self: center;
+
+    position: absolute;
+    right: 10px;
+    top: 4px;
+
+    grid-column: 2 / 3;
+}
+
+.vergrootglasgroep {
+    position: relative;
+    width: 500px;
+}
+
+#bollogo {
+    height: 35px;
+    margin: auto 0 auto 0;
+
+    grid-column: 2;
+}
+
+.catogbalk {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: end;
+
+    font-size: 0.80rem;
+}
+
+.catogbalk2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: end;
+
+    font-size: 0.70rem;
+
+    padding-right: 150px;
+}
+
+.catogbalk2 img {
+    align-self: center;
+    margin: 10px 0px 0px;
+    margin-left: 50px;
+}
+
+.shophulp {
+    margin-left: 10px;
+    font-family: Produkt;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0000a4;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    text-align: center;
+    line-height: 44px;
+
+    height: 45px;
+    width: fit-content;
+    border-radius: 50px;
+    border: solid white 1px;
+    background-color: white;
+    display: flex;
+}
+
+.shophulp svg {
+    fill: #0000a4;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.afbeeldinggroot {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+
+.catogline {
+    grid-column: 1 / 4;
+}
+
+.catogline hr {
+    border: 0.4px solid #D4D4D4;
+    opacity: 50%;
+}
+
+.test {
+    display: flex;
+    gap: 5px;
+
+    font-size: 0.70rem;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    justify-content: end;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.test img {
+    max-height: 30%;
+}
+
+.afbeeldingboven {
+    grid-column: 2 / 3;
+    margin-top: 15px;
+}
+
+.afbeeldingboven img {
+    border-radius: 15px;
+}
+
+.kleineafbeeldingen {
+    display: flex;
+    gap: 20px;
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+
+    margin-top: 60px;
+}
+
+.kleineafbeeldingen img {
+    border-radius: 15px;
+    width: 11.6vw;
+    height: 35vh;
+}
+
+.ietsgrotereafbeeldingen {
+    display: flex;
+    gap: 20px;
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    margin-top: 40px;
+}
+
+.ietsgrotereafbeeldingen img {
+    border-radius: 15px;
+    width: 18.1vw;
+}
+
+.ondertekst {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+    grid-template-rows: 17vh 50vh;
+    padding-top: 50px;
+}
+
+.ot {
+    font-size: 0.8rem; 
+}
+
+.trendingtekstthee {
+    grid-column: 1/7;
+    font-size: 2rem;
+    font-family: Arvor;
+}
+
+.trendingtekst {
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+
+    font-size: 2rem;
+    font-family: Arvor;
+}
+
+.TrendingAfbeeldingen {
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.Trendyafbt {
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+    font-weight: bold;
+    font-size: 0.8rem;
+    align-self: end;
+}
+
+.trend img {
+    width: 11.7vw;
+    height: 25vh;
+    border-radius: 15px;
+
+    align-self: center;
+}
+
+.trend p {
+    width: 11.7vw;
+    height: 20px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.theeafbeeldingen {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.thee img {
+    width: 11vw;
+    height: 22vh;
+    border-radius: 15px;
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+
+    align-self: center;
+}
+
+.thee p {
+    width: 11.7vw;
+    height: 20px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+
+.prijs {
+    width: 11.7vw;
+    color: oklch(59.6% .2367 29.81);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.prijs2 {
+    width: 70px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 5px;
+    background-color: oklch(59.6% .2367 29.81);
+    background: linear-gradient(120deg, oklch(59.6% .2367 29.81) 75%, transparent 75%), white;
+    border-radius: 6px;
+
+}
+
+.stapelkorting {
+    color: oklch(59.6% .2367 29.81);
+    font-weight: bold;
+    width: 11.7vw;
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
